@@ -1,0 +1,50 @@
+1. System Overview
+
+The Student Management System is designed using Object-Oriented Programming (OOP) principles. The system allows creation of student objects, storage of student information,
+calculation of grades, and display of student details.
+The design consists of four main classes:
+Person (Abstract Class)
+Course
+Student
+StudentManagementSystem (Main class)
+
+2. OOP Concepts Demonstrated
+A) Encapsulation
+Encapsulation is achieved by:
+Declaring class attributes as private
+Providing public getter and setter methods
+For example:
+studentId, marks, and course in the Student class are private.
+courseCode and courseName in the Course class are private.
+This ensures data hiding and controlled access.
+
+B) Abstraction
+Abstraction is implemented using the abstract class Person.The method displayDetails() is declared as abstract.It forces subclasses (like Student) to provide their own implementation.
+This hides implementation details and provides a clear structure.
+
+C)Inheritance
+Inheritance is demonstrated by:
+class Student extends Person
+The Student class inherits the name attribute and common behavior from the Person class.
+
+D)Polymorphism
+Polymorphism is shown through method overriding.The displayDetails() method in the Student class overrides the abstract method defined in Person.
+This allows different classes to provide their own implementation of the same method.
+
+3. System Functionality
+
+The system:
+
+Captures Student ID, Name, Course, and Marks
+
+Calculates grade using conditional logic
+
+Displays full student details including calculated grade
+
+The grading criteria used:
+
+Marks	Grade
+70+	A
+60–69	B
+50–59	C
+<50	Fail
